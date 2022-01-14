@@ -1,0 +1,1 @@
+(()=>{var o={902:o=>{o.exports=()=>{console.log("これはモジュールAです。")}},78:o=>{o.exports=()=>{console.log("これはモジュールBです。")}}},r={};function e(t){var s=r[t];if(void 0!==s)return s.exports;var n=r[t]={exports:{}};return o[t](n,n.exports,e),n.exports}(()=>{const o=e(902),r=e(78);o(),r()})()})();
