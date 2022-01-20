@@ -13,8 +13,32 @@ class Cat extends Animal {
     }
 }
 
+class Lion extends Animal {
+    speak(){
+        console.log('gao-')
+    }
+}
+
+class Dog extends Animal {
+    constructor(){
+        super()
+        this.energy = 200
+    }
+    speak(){
+        console.log('bow')
+    }
+    eat(){
+        this.energy = this.energy + 20
+    }
+}
+
+
+
 const cat = new Cat()
+const dog = new Dog()
 cat.speak()
+dog.speak()
 cat.eat()
 dog.eat()
-console.log(cat.energy)
+console.log('cat',cat.energy)
+console.log('dog',dog.energy)
